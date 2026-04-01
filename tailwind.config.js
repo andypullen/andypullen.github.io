@@ -2,8 +2,8 @@
 module.exports = {
   content: [
     "assets/**/*.svg",
+    "content/**/*.{html,njk,md,liquid}",
     "_includes/**/*.{html,njk,md}",
-    "_site/**/*.{html,njk,md}",
   ],
   theme: {
     colors: {
@@ -40,10 +40,8 @@ module.exports = {
   },
   safelist: [
     {
-      pattern: /pl-\d+/,
-      variants: ['md'],
+      pattern: /(text|border)-(blue|orange|gold|green)/,
     },
   ],
   plugins: [],
 }
-
