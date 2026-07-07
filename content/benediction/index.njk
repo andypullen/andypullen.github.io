@@ -5,26 +5,28 @@ color: orange
 section: Benediction
 ---
 
-<h1 class="text-5xl font-bold mb-10">Benediction App</h1>
+<div class="grid md:grid-cols-2 gap-14 items-center">
+	<div>
+		<p class="eyebrow">iOS App</p>
+		<h1 class="font-display font-bold text-5xl sm:text-6xl leading-none tracking-tight mt-5">
+			<span class="italic text-accent">Benediction</span>
+		</h1>
 
-<div class="flex justify-center w-full mt-2">
-	<div class="w-4/5 md:w-1/2">
-		{% image "benediction-screenshot.png", "A screenshot of the Benediction App running on an iPhone, with a prayer from The Divine Liturgy of St. John Chrysostom.", [960], "(min-width: 800px) 50vw, 100vw" %}
+		<p class="mt-8 text-xl text-muted max-w-xl">
+			Benediction provides people around the world with an opportunity to pray together using a prayer sourced from scripture and leaders within the rich traditions and time periods of the historical Christian faith.
+		</p>
+
+		<div class="flex flex-wrap items-center gap-5 mt-10">
+			<a href="https://apps.apple.com/us/app/benediction-daily-prayers/id6443994147?itsct=apps_box_badge&amp;itscg=30200" class="inline-block overflow-hidden rounded-xl" style="width: 200px; height: 66px;">
+				<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1678665600" alt="Download on the App Store" width="200" height="66" loading="lazy" decoding="async" style="width: 200px; height: 66px;" />
+			</a>
+			<a href="/benediction/privacy" class="fancy-link u-orange text-lg">Privacy&nbsp;Policy</a>
+		</div>
 	</div>
-</div>
 
-<div class="my-8 text-xl">
-	Benediction provides people around the world with an opportunity to pray together using a prayer sourced from scripture and leaders within the rich traditions and time periods of the historical Christian faith.
-</div>
-
-<div class="flex items-center">
-	<a href="https://apps.apple.com/us/app/benediction-daily-prayers/id6443994147?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;">
-  		<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1678665600" alt="Download on the App Store" width="250" height="83" loading="lazy" decoding="async" style="border-radius: 13px; width: 250px; height: 83px;" />
-	</a>
-	<a
-		href="/benediction/privacy"
-		class="ml-1 px-2 py-2 bg-none text-orange border-orange border-2 hover:bg-gray-dark hover:text-gray-light hover:border-gray-light hover:border-2 rounded flex gap-1"
-	>
-  	<span class="">Privacy Policy</span>
-	</a>
+	<div class="flex justify-center">
+		<div class="w-3/4 sm:w-3/5 md:w-4/5 max-w-xs rotate-2 rounded-3xl overflow-hidden" style="box-shadow: 0 24px 64px -16px color-mix(in oklab, var(--accent) 35%, transparent);">
+			{% image "benediction-screenshot.png", "A screenshot of the Benediction App running on an iPhone, with a prayer from The Divine Liturgy of St. John Chrysostom.", [960], "(min-width: 800px) 50vw, 100vw" %}
+		</div>
+	</div>
 </div>

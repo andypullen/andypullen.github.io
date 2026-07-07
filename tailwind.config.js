@@ -7,21 +7,25 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'blue': '#62cdff',
+      'ink': '#14111b',
+      'cream': '#f4efe4',
+      'muted': '#a89fc0',
+      'blue': '#7cd0ff',
       'blue-dark': '#2b303f',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#6ce879',
+      'purple': '#b49bf5',
+      'pink': '#ff8fc6',
+      'orange': '#ffa163',
+      'green': '#a6e693',
       'yellow': '#ffc82c',
-      'gold': '#ffab62',
+      'gold': '#ffc857',
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
     },
     fontFamily: {
-      sans: ['sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'sans-serif'],
+      display: ['Fraunces', 'Georgia', 'serif'],
+      serif: ['Fraunces', 'Georgia', 'serif'],
     },
     extend: {
       spacing: {
@@ -33,14 +37,16 @@ module.exports = {
       }
     },
     fontWeight: {
-      light: 200,
+      light: 300,
       normal: 400,
+      medium: 500,
       bold: 600,
+      black: 800,
     }
   },
   safelist: [
     {
-      pattern: /(text|border)-(blue|orange|gold|green)/,
+      pattern: /(text|border)-(blue|orange|gold|green|pink)/,
     },
   ],
   plugins: [],

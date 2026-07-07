@@ -4,9 +4,54 @@ title: Andy Pullen's website
 color: blue
 section: Home
 ---
-<h1 class="text-5xl ml-3 font-bold mb-10">
-	Hello. I build <a class="hover:text-gray-light underline" href="https://beaverton.cc/">very</a> <a class="hover:text-gray-light underline" href="https://cea.llc">good</a> <a class="hover:text-gray-light underline" href="https://www.summitbirthportland.com/">websites</a>. Let me know if you need one.
+<h1 class="font-display font-bold text-5xl sm:text-6xl md:text-7xl leading-none tracking-tight">
+	<span class="block italic text-accent">Hello.</span>
+	<span class="block mt-5" style="line-height: 1.15;">I build <a class="fancy-link fancy-link-display u-blue" href="https://beaverton.cc/">very</a> <a class="fancy-link fancy-link-display u-pink" href="https://cea.llc">good</a> <a class="fancy-link fancy-link-display u-gold" href="https://www.summitbirthportland.com/">websites</a>.</span>
 </h1>
-<div class="flex">
-	<a aria-label="Email me" class="text-5xl px-3 py-2 border-blue-dark border-2 hover:border-blue hover:border-2 hover:bg-gray-dark rounded flex gap-2" href="mailto:a@andypullen.com">✉️<span class="sr-only">Email me</span></a>
+
+<p class="mt-10 text-xl md:text-2xl text-muted max-w-xl">Let me know if you need one.</p>
+
+<div class="mt-8">
+	<a class="btn text-lg" href="mailto:a@andypullen.com">
+		<span aria-hidden="true">✉️</span>
+		<span>a@andypullen.com</span>
+	</a>
 </div>
+
+<section aria-labelledby="work-heading" class="mt-28">
+	<h2 id="work-heading" class="eyebrow">Things I&rsquo;ve made</h2>
+	<ul class="work-list mt-6">
+		<li>
+			<a class="work-row u-blue" href="https://beaverton.cc/">
+				<span class="work-index" aria-hidden="true">01</span>
+				<span class="work-name">beaverton.cc</span>
+				<span class="work-tag">Website</span>
+				<span class="work-arrow" aria-hidden="true">&nearr;</span>
+			</a>
+		</li>
+		<li>
+			<a class="work-row u-pink" href="https://cea.llc">
+				<span class="work-index" aria-hidden="true">02</span>
+				<span class="work-name">cea.llc</span>
+				<span class="work-tag">Website</span>
+				<span class="work-arrow" aria-hidden="true">&nearr;</span>
+			</a>
+		</li>
+		<li>
+			<a class="work-row u-gold" href="https://www.summitbirthportland.com/">
+				<span class="work-index" aria-hidden="true">03</span>
+				<span class="work-name">summitbirthportland.com</span>
+				<span class="work-tag">Website</span>
+				<span class="work-arrow" aria-hidden="true">&nearr;</span>
+			</a>
+		</li>
+		<li>
+			<a class="work-row u-orange" href="/benediction">
+				<span class="work-index" aria-hidden="true">04</span>
+				<span class="work-name">Benediction</span>
+				<span class="work-tag">iOS App</span>
+				<span class="work-arrow" aria-hidden="true">&rarr;</span>
+			</a>
+		</li>
+	</ul>
+</section>
