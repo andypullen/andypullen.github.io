@@ -1,9 +1,8 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
 
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { rssPlugin: pluginRss } = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
@@ -17,6 +16,10 @@ module.exports = function(eleventyConfig) {
 		"./public/": "/",
 	});
 	eleventyConfig.addPassthroughCopy("CNAME");
+
+	// Eleventy 2 ignored underscore-prefixed directories; Eleventy 3 does not.
+	// Keep the unpublished blog out of the build (remove this to publish it).
+	eleventyConfig.ignores.add("content/_blog/**");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -36,7 +39,6 @@ module.exports = function(eleventyConfig) {
 	});
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-	eleventyConfig.addPlugin(pluginBundle);
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {

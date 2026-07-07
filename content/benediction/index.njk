@@ -25,8 +25,11 @@ section: Benediction
 	</div>
 
 	<div class="flex justify-center">
-		<div class="w-3/4 sm:w-3/5 md:w-4/5 max-w-xs rotate-2 rounded-3xl overflow-hidden" style="box-shadow: 0 24px 64px -16px color-mix(in oklab, var(--accent) 35%, transparent);">
-			{% image "benediction-screenshot.png", "A screenshot of the Benediction App running on an iPhone, with a prayer from The Divine Liturgy of St. John Chrysostom.", [960], "(min-width: 800px) 50vw, 100vw" %}
+		<div class="relative w-3/4 sm:w-3/5 md:w-4/5 max-w-xs">
+			<div class="phone-glow" aria-hidden="true"></div>
+			<div class="relative rotate-2 fade-bottom">
+				{% image "benediction-screenshot.png", "A screenshot of the Benediction App running on an iPhone, with a prayer from The Divine Liturgy of St. John Chrysostom.", [960], "(min-width: 800px) 50vw, 100vw" %}
+			</div>
 		</div>
 	</div>
 </div>
